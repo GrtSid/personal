@@ -21,6 +21,8 @@ jobs:
         python-version: '3.6'
     - name: Install dependencies
       run: |
+        python3 -m vnev /home/site/wwwroot/antenv3.6
+        cd /home/site/wwwroot/
         source antenv3.6/bin/activate
         pip install -r requirements.txt
     - name: 'Deploy to Azure Web App'
