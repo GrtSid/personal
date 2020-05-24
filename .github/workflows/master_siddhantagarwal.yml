@@ -21,6 +21,9 @@ jobs:
         python-version: '3.6'
     - name: Install dependencies
       run: |
+        echo "Hello"
+        ls
+        pwd
         python3 -m venv /home/site/wwwroot/antenv3.6
         cd /home/site/wwwroot/
         source antenv3.6/bin/activate
