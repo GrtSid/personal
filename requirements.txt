@@ -20,15 +20,15 @@ h5py==2.10.0
 idna==2.9
 idx2numpy==1.2.2
 importlib-metadata==1.6.0
-Keras==2.3.1
-Keras-Applications==1.0.8
-Keras-Preprocessing==1.1.1
+# Keras==2.3.1
+# Keras-Applications==1.0.8
+# Keras-Preprocessing==1.1.1
 kiwisolver==1.2.0
 Markdown==3.2.2
 matplotlib==3.2.1
-numpy==1.18.4
+# numpy==1.18.4
 oauthlib==3.1.0
-opencv-python==4.2.0.34
+# opencv-python==4.2.0.34
 opt-einsum==3.2.1
 Pillow==7.1.2
 protobuf==3.11.3
@@ -45,10 +45,10 @@ scipy==1.4.1
 screen==1.0.1
 six==1.14.0
 sqlparse==0.3.1
-tensorboard==2.2.1
-tensorboard-plugin-wit==1.6.0.post3
-tensorflow==2.2.0
-tensorflow-estimator
+# tensorboard==2.2.1
+# tensorboard-plugin-wit==1.6.0.post3
+# tensorflow==2.2.0
+# tensorflow-estimator
 termcolor==1.1.0
 urllib3==1.25.9
 Werkzeug==1.0.1
