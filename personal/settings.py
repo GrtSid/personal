@@ -25,7 +25,7 @@ SECRET_KEY = '1-$n6_edg((-z%+)+!6*4-ldb(8wze*ukia=dlp2a73-csycww'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['siddhantagarwal.azurewebsites.net']
 
 
 # Application definition
@@ -49,7 +49,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'django_scss.finders.SCSSFinder',
 ]
 
 ROOT_URLCONF = 'personal.urls'
