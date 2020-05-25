@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     // AJAX request
     $.ajax({
-      url: 'http://localhost:8000/project/',
+      url: 'project/',
       type: 'post',
       data: fd,
       contentType: false,

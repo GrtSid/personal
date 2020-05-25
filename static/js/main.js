@@ -3,6 +3,13 @@
  	easing: 'slide'
  });
 
+$(function(){
+     var navMain = $(".navbar-collapse");
+     navMain.on("click", "a:not([data-toggle])", null, function () {
+         navMain.collapse('hide');
+     });
+ });
+
 (function($) {
 
 	"use strict";
@@ -18,7 +25,6 @@
 
 
 	var fullHeight = function() {
-
 		$('.js-fullheight').css('height', $(window).height());
 		$(window).resize(function(){
 			$('.js-fullheight').css('height', $(window).height());
@@ -185,7 +191,6 @@
 				$('.number').each(function(){
 					var $this = $(this),
 						num = $this.data('number');
-						console.log(num);
 					$this.animateNumber(
 					  {
 					    number: num,
