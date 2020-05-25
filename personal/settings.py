@@ -25,7 +25,7 @@ SECRET_KEY = '1-$n6_edg((-z%+)+!6*4-ldb(8wze*ukia=dlp2a73-csycww'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['siddhantagarwal.azurewebsites.net']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

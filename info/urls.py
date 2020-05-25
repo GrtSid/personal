@@ -4,7 +4,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', views.Cloth_Classification, name="classification"),
+    path(r'^project/', views.Cloth_Classification, name="classification"),
+    path('', views.index, name="index"),
 ]
+
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + \
     static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
