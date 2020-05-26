@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from django.http import JsonResponse
-from django.core.files.storage import FileSystemStorage
-from django.views.decorators.csrf import csrf_exempt
-from .projects.classification import classify
+# from django.http import JsonResponse
+# from django.core.files.storage import FileSystemStorage
+# from django.views.decorators.csrf import csrf_exempt
+# from .projects.classification import classify
 
 
 def index(request):
