@@ -2,15 +2,17 @@ import pickle
 import numpy as np
 import cv2
 from PIL import Image
+from personal.settings import BASE_DIR, STATICFILES_DIRS
+
 
 def classify(path):
-    image = cv2.imread('/home/siddhantagarwal/profile/personal' + path, 0)
+    image = cv2.imread(BASE_DIR + path, 0)
     image = Image.fromarray(image)
     image = np.array(image.resize((28, 28), Image.ANTIALIAS))
     data = image.reshape(28, 28)
     data = np.array(data)
 
-    with open(f'/home/siddhantagarwal/profile/personal/static/classification_cloth.pkl', 'rb') as f:
+    with open(STATICFILES_DIRS[0]+'/classification_cloth.pkl', 'rb') as f:
         try:
             model = pickle.load(f)
         except AttributeError:
@@ -21,8 +23,3 @@ def classify(path):
                  }
         return dict1[ans]
 
-# shirt/t-shirt/pullover/coat = 0,3,2
-# shirt = 2
-# t-shirt = 6
-# sneaker = 5
-# bag = 2
